@@ -1,3 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    color: green; 
+  min-height         : 100vh;
+  background         : url("imgs/body.jfif") no-repeat;
+  background-size    : cover;
+  background-position: center;
+  backdrop-filter    : blur(1.3px);
+}
+
+  /*Começo Menu*/
+.header {
+  position       : fixed;
+  top            : 0;
+  left           : 0;
+  width          : 100%;
+  padding        : 20px 100px;
+  background     : transparent;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  z-index        : 100;
+}
+.logo {
+  font-size      : 32px;
+  color          : #fff;
+  text-decoration: none;
+  font-weight    : 700;
+}
+
+.navbar a {
+  position       : relative;
+  font-size      : 18px;
+  color          : #ffffff;
+  font-weight    : 500;
+  text-decoration: none;
+  margin-left    : 40px;
+}
+
+.navbar a::before {
+  content   : "";
+  position  : absolute;
+  top       : 100%;
+  left      : 0;
+  width     : 0;
+  height    : 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+h3 {
+  color    : white;
+  font-size: 25px;
+}
+h5 {
+  color     : rgb(2, 255, 2);
+  font-size : 15px;
+  margin    : 0px;
+  text-align: center;
+}
+  /*Fim Menu*/
+
+  /*Começo Animation*/
+@keyframes entering {
+  from {
+    opacity  : 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity  : 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  padding  : 64px;
+  grid-area: timeline;
+    /*overflow-y: scroll;*/
+  animation: entering 0.7s ease-in-out;
+}
+nav {
+  padding  : 64px;
+  grid-area: timeline;
+    /*overflow-y: scroll;*/
+  animation: entering 0.7s ease-in-out;
+}
+  /*Fim animation*/
+
+  /*Dispositivos extra pequenos (telefones retrato, menos de 576px)*/
+@media (max-width: 575.98px) {
+}
+
+  /*Dispositivos pequenos (telefones em modo paisagem, 576px e superior)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+  /*Dispositivos médios (tablets, 768px e superior)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+  /*Dispositivos grandes (desktops, 992px e acima)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+  /*Dispositivos extragrandes (desktops grandes, 1200px e acima)*/
+@media (min-width: 1200px) {
 }
