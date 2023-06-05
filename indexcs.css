@@ -12,7 +12,7 @@ body {
   background         : url("imgs/body.jfif") no-repeat;
   background-size    : cover;
   background-position: center;
-  backdrop-filter    : blur(1.3px);
+  backdrop-filter    : blur(3px);
 }
 
   /*Começo Menu*/
@@ -70,6 +70,80 @@ h5 {
   text-align: center;
 }
   /*Fim Menu*/
+
+    .titulo{
+      text-align: justify;
+      color: #fff;
+      font-size: 30px;
+    }
+
+  .texto {
+      color: #fff;
+      columns: 3;
+      break-inside: avoid-column;
+      column-gap: 150px;
+      font-size: 17px;
+  }
+
+  .font-zero {
+    font-size: 0px;
+    opacity: 0;
+    float: none;
+    border: 0px;
+    display: none;
+    padding: 0px;
+  }
+
+  .final {
+    text-align: center;
+    color: red;
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type="submit"] { 
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+    outline: 0;
+  }
+  input[type="submit"]:hover{
+    background-color: #FFF;
+    color: green;
+  }
+
+  input[type="button"] { 
+    margin-left: 1cm;
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+    outline: 0;
+  }
+  input[type="button"]:hover{
+    background-color: #FFF;
+    color: green;
+  }
+    
+  .linha-retangular{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+
 
   /*Começo Animation*/
 @keyframes entering {
